@@ -2,7 +2,7 @@ module.exports = myTasks;
 
 function myTasks(grunt) {
     grunt.initConfig({
-        browserify: {
+        browserify: {        //Build the code into the /dist directory, in a mode compatible with browsers!
             main: {
                 src: ['client/app.js'],
                 dest: 'dist/app.js'
