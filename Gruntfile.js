@@ -57,6 +57,6 @@ function myTasks(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-watch');         //Makes our task available to us via NPM
     grunt.loadNpmTasks('grunt-browserify');
 }
