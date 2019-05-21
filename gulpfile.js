@@ -34,7 +34,6 @@ gulp.task("copy:vendor", function(done) {//take all our dependencies and put the
 });
 
 //WATCHING
-//TODO
 gulp.task("watch", function(){
     return gulp.watch("client/**/*.js", "client/**/*.html");  //watches all .js files below client and all .html files below client.
 });
