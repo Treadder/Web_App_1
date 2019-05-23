@@ -1,0 +1,20 @@
+{                      //This is our eslint config file, and it's in JS instead of JQUERY???
+"env": {
+"browser": true,
+"commonjs": true,
+"es6": true
+},
+
+"extends": "airbnb-base",
+"globals": {
+"Atomics": "readonly",                 //This adds a global variable called "Atomic, so don't flag it" You can't use it in a function.
+"SharedArrayBuffer": "readonly"
+},
+
+"parserOptions": {        //which version of JS are we using
+"ecmaVersion": 2018
+},
+
+"rules":{}
+
+}
