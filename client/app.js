@@ -25,6 +25,7 @@ $(document).ready(() => {
                     output.append($palette);
                 });
             })
+            /*eslint-disable*/
             .catch((err) => {
                 alert('shit hit the fan');
                 console.error('failed: ', err);
