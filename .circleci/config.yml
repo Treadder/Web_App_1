@@ -45,13 +45,13 @@ jobs:
       - run: npm test #this is running the npm task that we created in the package.json
 
         lint:
-          executor: node-executor
-          working_directory: ~/webapp
-          steps:
-          - checkout
-          - attatch_workspace:
+            executor: node-executor
+            working_directory: ~/webapp
+            steps:
+            - checkout
+            - attatch_workspace:
             at: ~/webapp
-          - run: npm run lint
+            - run: npm run lint
 
           test:
             executor: node-executor
