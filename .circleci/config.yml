@@ -59,9 +59,8 @@ jobs:
             steps:
             - checkout
             - attatch_workspace:
-            at:~/webapp
+            at: ~/webapp
             - run: npm test
-
 
 workflows:
   version: 2
