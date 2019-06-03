@@ -68,10 +68,10 @@ workflows:
   github_pipeline:
     jobs:
     - install-dependencies
-    - lint
+    - lint:
     requires:
     - install-Dependencies
-    - test
+    - test:
     requires:
     - install-dependencies
 
