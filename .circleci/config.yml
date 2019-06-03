@@ -44,23 +44,23 @@ jobs:
       # run tests!
       - run: npm test #this is running the npm task that we created in the package.json
 
-      lint:
-        executor: note-executor
-        working_directory: ~/webapp
-        steps:
-        - checkout
-        - attatch_workspace:
-          at: ~/webapp
-        - run: npm run lint
-
-        test:
+        lint:
           executor: node-executor
           working_directory: ~/webapp
           steps:
           - checkout
           - attatch_workspace:
-          at:~/webapp
-          - run: npm test
+            at: ~/webapp
+          - run: npm run lint
+
+          test:
+            executor: node-executor
+            working_directory: ~/webapp
+            steps:
+            - checkout
+            - attatch_workspace:
+            at:~/webapp
+            - run: npm test
 
 
 workflows:
