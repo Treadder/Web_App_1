@@ -55,6 +55,8 @@ workflows:
     github_pipeline:
         jobs:
             - install-dependencies
+                filters:
+                ignore: gh-pages   #how to ignore a branch. If we push a change in this area, circleCI won't run.
             - lint:
                 requires:
                     - install-Dependencies
